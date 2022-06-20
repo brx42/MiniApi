@@ -1,6 +1,6 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET_CORE_TRY", "ASP.NET_CORE_TRY\ASP.NET_CORE_TRY.csproj", "{B9A059EE-F26D-4770-B0AD-71E0ACE2F85E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mini_Api_Project", "Mini_Api_Project\Mini_Api_Project.csproj", "{B9A059EE-F26D-4770-B0AD-71E0ACE2F85E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
