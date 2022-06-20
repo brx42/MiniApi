@@ -8,9 +8,9 @@ namespace ASP.NET_CORE_TRY.Controllers;
 [Route("api/[controller]")]
 public class MiniApiController : ControllerBase
 {
-    private readonly UserRepository _repository;
+    private readonly IRepository<User> _repository;
 
-    public MiniApiController(UserRepository repository) => _repository = repository;
+    public MiniApiController(IRepository<User> repository) => _repository = repository;
 
     [HttpGet("AllUsers")]
     public async Task<IActionResult> GetAllUsers()

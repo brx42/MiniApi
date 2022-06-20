@@ -4,12 +4,15 @@ using ASP.NET_CORE_TRY.DataBase;
 
 namespace ASP.NET_CORE_TRY.Repository;
 
-public abstract class UserRepository : IRepository<User>
+public class UserRepository : IRepository<User>
 {
     private readonly ApplicationContext _context;
 
-    protected UserRepository(ApplicationContext context) => _context = context;
-    
+    public UserRepository(ApplicationContext context)
+    {
+        _context = context;
+    }
+
     public async Task<IEnumerable<User>> GetAll()
     {
         return await _context.Users.ToListAsync();
